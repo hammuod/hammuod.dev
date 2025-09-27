@@ -8,6 +8,20 @@
 ::selection {
     background-color: #5c5a5a8c;
 }
+::-webkit-scrollbar {
+    width: 8px;     
+    height: 5px;     
+}
+::-webkit-scrollbar-track {
+    background: #c0bebe; 
+}
+::-webkit-scrollbar-thumb {
+    background: #232323;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #111010;
+}
 
 body {
     background-color: rgb(23, 23, 23);
