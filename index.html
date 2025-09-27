@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenr" data-aos-delay="50" data-aos="fade-up" data-aos-duration="1000" >
+        <div class="header">
+            <h1 class="logo">HM</h1>
+            <button data-i18n="btn" id="langBtn" onclick="toggleLang()"></button>
+        </div>
+        <div class="con-Home">
+            <div class="conimg">
+            <img src="Hammoud dev.png">
+        </div>
+        <div class="info">
+            <div class="con-f">
+            <p data-i18n="riyadh" >الرياض,المملكة العربية السعودية<i class="fa-solid fa-location-dot"></i></p>
+            <h2 data-i18n="bakr" class="titel">اهلا, انا بكر</h2>
+            <p data-i18n="frontend" class="titel-p">انا <samp>مطور وا جهات امامية</samp></p>
+            </div>
+            <div class="con-i">
+                <h1 data-i18n="techniques" class="titel-h">:التقنيات التي استخدمها</h1>
+                <img class="img" src="html.png" style="width: 50px;">
+                <img class="img" src="css.png" style="width: 50px;">
+                <img class="img" src="js.png" style="width: 50px;">
+            </div>
+        </div>
+        </div>
+        <div class="header-2">
+            <h2 data-i18n="works" class="logo">مشاريعي</h2>
+        </div>
+        <div class="con-Works">
+            <div class="cards">
+                <div class="card">
+                    <a class="link-w" href="https://hammuod.github.io/Programming-Languages/" target="_blank">
+                        <img src="Programming-Languages.png" class="img-w">
+                        <h3 class="titel-img">Programming Languages</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="link-w" href="https://hammuod.github.io/X-O-GAME/" target="_blank">
+                        <img src="xo game.png" class="img-w">
+                        <h3 class="titel-img">XO GAME</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-2">
+            <h2 data-i18n="connect" class="logo">تواصل</h2>
+        </div>
+        <div class="Connect">
+            <div class="cards">
+                <div class="card-c">
+                    <form id="contact-form">
+                        <input type="hidden" name="to_email" value="bkoor223355@gmail.com">
+                        <h3 data-i18n="name" >:الاسم</h3>
+                        <input class="text" type="text" name="user_name" required>
+                        <h3 data-i18n="email">:البريد الإلكتروني</h3>
+                        <input class="text" type="email" name="user_email" required>
+                        <h3 data-i18n="message" >:الرسالة</h3>
+                        <textarea class="text" name="message" required></textarea>
+                        <button data-i18n="Send" class="btn" type="submit">إرسال</button>
+                    </form>
+                    <p data-i18n="status" id="status">الحالة</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <h1 class="titel-f">Hammoud<span>.dev</span></h1>
+        </footer>
+    </div>
+
+<script src="https://unpkg.com/i18next@23.7.17/dist/umd/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="main.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, 
+        once: true     
+    });
+</script>
+</body>
+</html>
