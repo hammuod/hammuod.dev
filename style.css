@@ -1,9 +1,232 @@
-*{
+/* ================================
+   القسم 1: الهيكل الرئيسي (Header, Footer, Main)
+================================= */
+.header {
+  width: 730px;
+  height: 80px;
+  background: rgb(35, 35, 35);
+  border-radius: 10px;
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-2 {
+  width: 730px;
+  height: 80px;
+  background: rgb(35, 35, 35);
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #131313;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.titel-f {
+  color: #c0bebe;
+  font-size: 2rem;
+  padding: 10px 270px;
+}
+
+.titel-f span {
+  color: #232323;
+}
+
+
+/* ================================
+   القسم 2: الحاويات (Containers)
+================================= */
+.contenr {
+  justify-items: center;
+  align-items: center;
+}
+
+.conimg {
+  justify-items: center;
+  margin-top: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: rgb(35, 35, 35);
+}
+
+.info {
+  background-color: rgb(35, 35, 35);
+  border-radius: 10px;
+  justify-items: right;
+  width: 330px;
+  height: 330px;
+  margin-top: 20px;
+  padding: 10px 5px;
+}
+
+.con-Home {
+  display: flex;
+  gap: 10px;
+}
+
+.con-f {
+  align-items: center;
+  justify-items: right;
+  margin-right: 5px;
+}
+
+.con-i {
+  justify-items: right;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.cards {
+  gap: 10px;
+  margin: 25px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 196px;
+  background: #232323;
+  border-radius: 10px;
+}
+
+.card:hover {
+  width: 370px;
+  transition: 1s;
+}
+
+.card-c {
+  width: 270px;
+  height: 330px;
+  background: rgb(35, 35, 35);
+  border-radius: 10px;
+}
+
+#contact-form {
+  width: 300px;
+  align-items: center;
+  justify-items: left;
+}
+
+#status {
+  background: #131313;
+  border-radius: 10px 10px 0 10px;
+  transform: translate(155px, -320px);
+  width: 110px;
+  height: auto;
+  padding-left: 5px;
+}
+
+
+/* ================================
+   القسم 3: صور ونصوص (Images, Text)
+================================= */
+.logo {
+  margin: 1px 10px;
+  font-size: 3rem;
+}
+
+.conimg img {
+  margin: 40px;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.conimg img:hover {
+  width: 90%;
+  transition: 1s;
+  margin: 20px;
+}
+
+.img {
+  width: 25px;
+}
+
+.img-w {
+  width: 350px;
+  border-radius: 10px;
+  display: block;
+}
+
+.titel-img {
+  padding-left: 50px;
+}
+
+.titel {
+  color: #111010;
+}
+
+.titel-p {
+  color: #c0bebe;
+}
+
+.titel-p samp {
+  color: #131313;
+  font-weight: 700;
+}
+
+.card-c h3 {
+  margin-left: 20px;
+}
+
+.text {
+  margin-left: 20px;
+  border: none;
+  width: 230px;
+  border-radius: 10px;
+}
+
+.titel-h {
+  font-size: 1.8rem;
+}
+
+
+/* ================================
+   القسم 4: روابط وأزرار (Links, Buttons)
+================================= */
+.link-w {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  background-color: #131313;
+  color: #c0bebe;
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+#langBtn {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+
+/* ================================
+   القسم 5: إعدادات عامة (Reset & Base)
+================================= */
+* {
     font-family: 'Cairo', sans-serif;
     font-size: 1.08rem;
     box-sizing: initial;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 ::selection {
@@ -16,205 +239,63 @@ body {
     color: #fff;
 }
 
-.contenr {
-    justify-items: center;
-    align-items: center;
+
+/* ================================
+   القسم 5: Responsive (شاشات مختلفة)
+================================= */
+
+@media (max-width: 1024px) {
+  /* التابلت */
+  .header,
+  .header-2,
+  .footer {
+    width: 95%;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
 }
 
-.header {
-    width: 730px;
-    height: 80px;
-    background: rgb(35, 35, 35);
-    border-radius: 10px;
-    margin-top: 43px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.header-2 {
-    width: 730px;
-    height: 80px;
-    background: rgb(35, 35, 35);
-    border-radius: 10px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    margin: 1px 10px;
-    font-size: 3rem;
-}
-
-.conimg {
-    justify-items: center;
-    margin-top: 20px;
-    width: 350px;
-    height: 350px;
-    border-radius: 10px;
-    background-color: rgb(35, 35, 35);
-}
-
-.conimg img {
-    margin: 40px;
-    width: 80%;
-    border-radius: 50%;
-}
-
-.conimg img:hover {
-    width: 90%;
-    transition: 1s;
-    margin: 20px;
-}
-
-.info {
-    background-color: rgb(35, 35, 35);
-    border-radius: 10px;
-    justify-items: right;
-    width: 330px;
-    height: 330px;
-    margin-top: 20px;
-    padding: 10px 5px;
-}
-
-.con-Home {
-    display: flex;
-    gap: 10px;
-}
-
-.titel {
-    color: #111010;
-}
-
-.titel-p {
-    color: #c0bebe;
-}
-
-.titel-p samp {
-    color: #131313;
-    font-weight: 700;
-}
-
-.img {
-    width: 25px;
-}
-
-.con-f {
-    align-items: center;
-    justify-items: right;
-    margin-right: 5px;
-}
-
-.con-i {
-    justify-items: right;
-    align-items: center;
-    padding: 70px 0px;
-}
-
-.img-w {
-    width: 350px;
-    border-radius: 10px;
-    display: block;
-}
-
-.titel-img {
-    padding-left: 50px;
-}
-
-.link-w  {
-    text-decoration: none;
-    color: #fff;
-}
-
-.cards {
-    gap: 10px;
-    margin: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.card {
-    width: 350px;
-    height: 196px;
-    background: #232323;
-    border-radius: 10px;
-}
-
-.card :hover {
-    width: 370px;
-    transition: 1s;
-}
-
-.card-c {
-    width: 270px;
-    height: 330px;
-    background: rgb(35, 35, 35);
-    border-radius: 10px;
-}
-
-.card-c h3 {
-    margin-left: 20px;
-}
-
-.text {
-    margin-left: 20px;
-    border: none;
-    width: 230px;
-    border-radius: 10px;
-}
-
-#contact-form {
-    width: 300px;
-    align-items: center;
-    justify-items: left;
-}
-
-#status {
-    background: #131313;
-    border-radius: 10px 10px 0px 10px;
-    transform: translate(155px, -320px);
-    width: 110px;
+@media (max-width: 768px) {
+  /* الموبايل */
+  .header,
+  .header-2,
+  .footer {
+    flex-direction: column;
     height: auto;
-    padding-left: 5px;
-}
+    padding: 10px;
+  }
 
-.footer {
-    background-color: #131313;
+  .con-Home {
+    flex-direction: column;
+  }
+
+  .conimg,
+  .info,
+  .card,
+  .card-c {
+    width: 90%;
+    height: auto;
+  }
+
+  #contact-form {
+    width: 100%;
+    max-width: 350px; /* عشان ما يتمدد أكثر من اللازم */
+    margin: 0 auto;   /* يخليه في النص */
+  }
+
+  #status {
+    transform: none;
+    position: relative;
+    margin-top: 10px;
+    width: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
-    display: flex;
+  }
+
+  .titel-f {
+    padding: 10px;
+    text-align: center;
+  }
 }
 
-.titel-f {
-    color: #c0bebe;
-    font-size: 2rem;
-    padding: 10px 500px;
-}
-
-.titel-f span {
-    color: #232323;
-}
-
-.btn {
-    border: none;
-    background-color: #131313;
-    color: #c0bebe;
-    padding: 10px 50px;
-    border-radius:10px;
-    margin-left: 40px;
-}
-
-.titel-h {
-    font-size: 1.8rem;
-}
-
-#langBtn {
-    border: none;
-    background: #00000000;
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-right: 20px;
-}
