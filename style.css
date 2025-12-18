@@ -102,7 +102,7 @@
 }
 
 .card:hover {
-  width: 370px;
+  scale: 1,1;
   transition: 1s;
 }
 
@@ -144,9 +144,8 @@
 }
 
 .conimg img:hover {
-  width: 90%;
+  scale: 1,1;
   transition: 1s;
-  margin: 20px;
 }
 
 .img {
